@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double result = 0D;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter an integer: ");
+        int n = scanner.nextInt();
+
+        for(double i = 1; i <= n; i++){
+            result += 1 / i;
+        }
+
+        System.out.println("Harmonic sum: " + result);
+
+    }
+}
